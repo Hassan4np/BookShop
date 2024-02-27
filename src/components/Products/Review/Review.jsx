@@ -7,7 +7,9 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 export default function Review() {
   return (
     <>
-      <Swiper
+   <div>
+    
+   <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -23,9 +25,9 @@ export default function Review() {
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide className="bg-yellow-50 px-3 rounded-lg">
+        <SwiperSlide className="bg-yellow-100 px-3 rounded-lg">
           <div>
-            <p className="text-base font-normal text-gray-500 mt-10">
+            <p className="text-base font-normal text-gray-600">
               At vero eos voluptatum et accusamus et iusto odio dignissimos
               ducimus qui blanditiis praesentium voluptatum error sit voluptate
               deleniti atque corrupti quos dolores et quas molestias excepturi
@@ -46,6 +48,7 @@ export default function Review() {
           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
         </SwiperSlide>
       </Swiper>
+   </div>
     </>
   );
 }

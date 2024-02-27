@@ -1,4 +1,5 @@
 import b from "../../../assets/img/Book/book.jpg";
+import c from "../../../assets/img/Book/cover.jpg";
 import { MdOutlineStarOutline } from "react-icons/md";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa";
@@ -19,7 +20,7 @@ const HotDell = () => {
       <Link>
       <div className="py-5">
           <Card
-            className="max-w-sm group hover:border-blue-600 rounded shadow-xl"
+            className="max-w-sm group hover:border-blue-600 rounded shadow-xl bg-white"
             imgAlt="img"
             imgSrc={b}
           >

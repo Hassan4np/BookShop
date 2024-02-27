@@ -4,7 +4,7 @@ import p1 from "../../assets/img/Book/book.jpg"
 const Bannar = () => {
   
     return (
-        <div>
+        <div className="px-5">
             <div className="carousel w-full h-[400px] ">
                 <div id="slide1" className="carousel-item relative w-full bg-cover ">
                     <img src={p1} className="w-full h-[600px] rounded-lg" />

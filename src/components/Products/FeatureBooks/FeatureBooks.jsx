@@ -15,7 +15,7 @@ function FeatureBooks() {
             <Link>
               <div>
                 <Card
-                  className="max-w-sm group hover:border-blue-600 rounded shadow-xl"
+                  className="max-w-sm group hover:border-blue-600 rounded shadow-xl bg-white"
                   imgAlt="img"
                   imgSrc={img}
                 >
