@@ -1,10 +1,9 @@
-
-import p1 from "../../assets/img/Book/book.jpg"
+import p1 from "../../assets/img/bannar/bannar-1.jpg"
 
 const Bannar = () => {
   
     return (
-        <div className="px-5">
+        <div className="px-5 md:px-0">
             <div className="carousel w-full h-[400px] ">
                 <div id="slide1" className="carousel-item relative w-full bg-cover ">
                     <img src={p1} className="w-full h-[600px] rounded-lg" />
@@ -70,70 +69,3 @@ export default Bannar;
 
 
 
-// import { Carousel } from 'flowbite-react';
-
-// function Component() {
-//   return (
-//     <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-//       <Carousel>
-//         <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-//         <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-//         <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-//         <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-//         <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-//       </Carousel>
-//     </div>
-//   );
-// }
-
-
-
-
-
-
-
-
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-// import { Pagination, Navigation } from "swiper/modules";
-// import b from "../../assets/img/Book/book.jpg";
-
-// export default function Bannar() {
-//   return (
-//     <>
-//       <Swiper
-//         pagination={{
-//           type: "fraction",
-//         }}
-//         navigation={true}
-//         modules={[Pagination, Navigation]}
-//         className="mySwiper"
-//       >
-//         <SwiperSlide className="">
-//           <img
-//             className="w-full h-[200px] md:h-[350px] lg:h-[500px] object-cover "
-//             src={b}
-//             alt=""
-//           />
-//           <div className="" >
-//             <h1>New books</h1>
-//             <p>
-//               Lorem ipsum dolor sit amet, consectetur adipisicing elit. In,
-//               excepturi.
-//             </p>
-//           </div>
-//         </SwiperSlide>
-//         <SwiperSlide>Slide 2</SwiperSlide>
-//         <SwiperSlide>Slide 3</SwiperSlide>
-//         <SwiperSlide>Slide 4</SwiperSlide>
-//         <SwiperSlide>Slide 5</SwiperSlide>
-//         <SwiperSlide>Slide 6</SwiperSlide>
-//         <SwiperSlide>Slide 7</SwiperSlide>
-//         <SwiperSlide>Slide 8</SwiperSlide>
-//         <SwiperSlide>Slide 9</SwiperSlide>
-//       </Swiper>
-//     </>
-//   );
-// }

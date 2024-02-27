@@ -2,6 +2,7 @@ import Bannar from "../Page/Bannar";
 import Bannar_2 from "../Page/Bannar_2";
 import BookCover from "../Products/Bookcover/BookCover";
 import Booklist from "../Products/Booklist/HotDell";
+import Category from "../Products/Category/Category";
 import FeatureBooks from "../Products/FeatureBooks/FeatureBooks";
 import Galary from "../Products/Galary/Galary";
 import LesastNews from "../Products/LesestNews/LesastNews";
@@ -15,6 +16,7 @@ const Home = () => {
         <div>
             <Bannar></Bannar>
             <Bannar_2></Bannar_2>
+            <Category></Category>
             <Booklist></Booklist>
             <FeatureBooks></FeatureBooks>
             <BookCover></BookCover>

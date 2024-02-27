@@ -10,7 +10,7 @@ const SocialSection = () => {
     <div className="py-5 bg-black px-5 mt-5 text-white ">
       <div className="md:flex px-5 ">
         <div className=" w-full md:w-2/4">
-          <h4 className="text-white text-2xl font-blod mb-5">
+          <h4 className="text-white text-xl font-blod mb-5">
             Get up to date on the last news, special event and news arrivals
           </h4>
           <div className="mb-5 flex">
@@ -29,7 +29,7 @@ const SocialSection = () => {
           </div>
         </div>
         <div className="md:w-2/4 w-full">
-          <h1 className="text-2xl font-blod mb-5">
+          <h1 className="text-xl font-blod mb-5">
             Follow our social media accounts for news and updates
           </h1>
           <div className="flex justify-center" >
