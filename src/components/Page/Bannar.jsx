@@ -1,7 +1,5 @@
 import p1 from "../../assets/img/bannar/bannar-1.jpg"
-
 const Bannar = () => {
-  
     return (
         <div className="px-5 md:px-0">
             <div className="carousel w-full h-[400px] ">

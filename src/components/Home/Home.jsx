@@ -3,6 +3,7 @@ import Bannar_2 from "../Page/Bannar_2";
 import BookCover from "../Products/Bookcover/BookCover";
 import Booklist from "../Products/Booklist/HotDell";
 import Category from "../Products/Category/Category";
+import Chat from "../Products/Chat/Chat";
 import FeatureBooks from "../Products/FeatureBooks/FeatureBooks";
 import Galary from "../Products/Galary/Galary";
 import LesastNews from "../Products/LesestNews/LesastNews";
@@ -24,7 +25,9 @@ const Home = () => {
             <LesastNews></LesastNews>
             <Pay_Icone></Pay_Icone>
             <Galary></Galary>
+            <Chat></Chat>
             <SocialSection></SocialSection>
+       
         
         </div>
     );

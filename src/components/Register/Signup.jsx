@@ -1,11 +1,51 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo  from "../../assets/img/logo/login.svg"
+import useAuth from "../Hook/useAuth";
+import { updateProfile } from "firebase/auth";
+import { toast } from "react-toastify";
 
 
 
 const Signup = () => {
     const [error,seterror] = useState('');
+    const {UserSignup} = useAuth();
+    const naavgate = useNavigate()
+    const hanglesignup=(e)=>{
+        e.preventDefault()
+        const form = e.target;
+        const name = form.name.value;
+        const photo = form.photo.value;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(name,email,password)
+
+        // if (password.length < 6) {
+        //     seterror("Give 6 Character Password")
+        //     return;
+        // } else if ( !/[!@#$%^&*()_+{}\[\]:;<>,.?~\\|\-=]/.test(password)) {
+        //     seterror("Give me spical caracter");
+        //     return;
+        // }else if(!/[A-Z]/.test(password)){
+        //     seterror("Give me captial letter")
+        //     return;
+        // }
+        UserSignup(email,password)
+        .then((result)=>{
+            console.log(result.user)
+            toast.success('Successfully Register')
+    
+              updateProfile(result.user,{
+                displayName:name,
+                photoURL:photo,
+            })
+            naavgate('/login')
+        })
+        .catch(error=>{
+            seterror(error.message)
+        })
+    
+    }
     return (
         <div className="hero min-h-screen bg-base-200 ">
             <div className="hero-content flex-col lg:flex-row ">
@@ -14,7 +54,7 @@ const Signup = () => {
                 </div>
                 <div className="card flex-shrink-0  max-w-sm shadow-2xl bg-base-100 lg:w-1/2 h-full">
                     <h1 className="text-5xl p-2 font-bold">Register</h1>
-                    <form className="card-body" >
+                    <form className="card-body" onSubmit={hanglesignup} >
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Name</span>
